@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+    <title>实战flex</title>
+
+
+    <style type="text/css">
+        html,
+        body {
+            height: 100%
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .top-body {
+                display: flex;
+                min-height: 100%;
+                flex-direction:column;
+        }
+
+        header{
+            background: green;
+            flex-basis: 120px;
+        }
+
+        footer{
+            background: #cececb;
+            flex-basis: 100px;
+        }
+
+        /* flex:1 */
+        .container-body {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        .content {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            background: red;
+        }
+
+        .ads{
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 300px;
+        }
+        .nav{
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+        .nav {
+           order: -1;
+        }
+
+    </style>
+
+</head>
+
+<body class="top-body">
+        <header>header</header>
+        <div class="container-body">
+          <main class="content">content</main>
+          <nav class="nav">nav</nav>
+          <aside class="ads">ads</aside>
+        </div>
+
+        <footer>footer</footer>
+</body>
+
+</html>

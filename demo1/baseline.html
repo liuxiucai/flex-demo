@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+    <title>flex-basis</title>
+
+
+    <style type="text/css">
+        html,
+        body {
+            height: 100%
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .flex-container{
+            display: flex; 
+            align-items: baseline;
+            width: 600px;
+            height: 500px;
+            background:black;
+        }
+
+        .flex-base{
+            width: 200px;
+        }
+
+        .flex-item1{
+            background: red;
+            height: 300px;
+        }
+
+        .flex-item2{
+            background: yellow;
+            height: 200px;
+        }
+
+        .flex-item3{
+            background: green;
+            height: 100px;
+        }
+
+        .flex-item4{
+            background: blue;
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+        <div class="flex-container">
+
+              <div class="flex-base flex-item1">box1</div>
+              <div class="flex-base flex-item2"><span style="line-height: 30px;">box2</span></div>
+              <div class="flex-base flex-item3">box3</div>
+              <div class="flex-base flex-item4">box4</div>
+        </div>
+
+</body>
+
+</html>
